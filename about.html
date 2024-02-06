@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+            
+  <section id="load">
+
+    <style>
+  
+
+      #load{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+      /* background-color: red; */
+
+}
+      
+    </style>
+
+    <div class="load" id="load">
+
+        <style>
+              @keyframes moveUpDown {
+    0% {
+      top: 0; /* Start position */
+    }
+    100% {
+      top: 30px; /* End position */
+    }
+
+    
+  }
+
+  #load{
+    position: relative;
+    transform: translateY(-20px);
+    transform: translateX(-5px);
+
+    animation: moveUpDown 2s ease-in-out infinite alternate; /* Animation properties */
+  }
+        </style>
+        
+
+        <img src="load.png" alt="" height="100px" width="150px"> 
+
+
+    </div>
+
+
+
+     <script>
+      
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const sourceIdNames = ["Rectangle_261_2","Rectangle_262_3","Rectangle_263_4","Rectangle_264_5"];
+      
+    
+      const candidateElement = document.getElementById("Rectangle_264_5")
+      candidateElement.addEventListener("animationend", (event) => {
+        if (event.animationName === "animation_Rectangle_264_5_flow_5") {
+    
+          sourceIdNames.forEach((id, index) => {
+            const element = document.getElementById(id)
+          
+            const animation = element.style.animation
+          
+            element.style.animation =  'none'
+            setTimeout(() => {
+              element.style.animation = animation
+            }, 5) 
+          })
+        };
+      });
+    
+    })
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+    // Hide the loading screen when all content is loaded
+    window.onload = function() {
+        document.getElementById("load").style.display = "none";
+        document.getElementById("main").style.display = "block";
+
+    };
+});
+
+    </script>  
+
+
+  </section>
+
+  <section id="main">
+
+
+    <nav>
+
+        <div class="l1">
+            <div class="logoholder">
+                <img src="icon.png" alt="" height="80px">
+            </div>
+            <div class="textholder">
+                SWARNA BHARTI PUBLIC SCHOOL,   DELHI
+            </div>
+
+
+
+
+        </div>
+        <div class="l2">
+            <ul>
+
+                <a href="/index.html"><li>
+                    Home
+    
+                </li></a>
+                <a href="/about.html">
+                <li>
+                    About us
+    
+                </li>
+              </a>
+                <a href="/admissions.html"><li>Admissions</li></a>
+                <a href="/contact.html"><li>Contact us</li></a>
+    
+    
+    
+            </ul>
+
+        </div>
+
+       
+
+    </nav>
+
+
+<img src="ad7.svg" alt="" width="100%">
+
+<img src="ad5.svg" alt="" width="100%">
+
+<div class="iconholder">
+   <ul>
+    <li>
+      <i class="fa-brands fa-facebook-f"></i>
+    </li>
+    <li>
+      <i class="fa-brands fa-instagram"></i>
+    </li>
+   </ul>
+</div>
+
+
+<img src="ad6.svg" alt="" width="100%" id="bottom">
+
+
+        
+
+
+      
+    </div>
+
+
+  </section>
+
+    

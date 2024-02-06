@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    outline: none;
+
+
+}
+
+a:focus{
+    text-decoration: none;
+}
+
+.iconholder ul{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+#main{
+    display: none;
+}
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+/* For Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+ul{
+    list-style: none;
+}
+.topp{
+    font-family: 'poppins';
+    font-size: 0.75rem;
+    max-width: 80%;
+}
+#bottom{
+    margin-top: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+a:focus{
+    color: inherit;
+}
+@keyframes scrollAnimation {
+
+    0%, 10% {
+        transform: translateX(0);}
+    20% ,30%{
+        transform: translateX(-20%);
+    }
+    40% ,50%{
+        transform: translateX(-40%);
+    }
+
+    60% ,70%{
+        transform: translateX(-60%);
+    }
+    80% ,90%{
+        transform: translateX(-80%);
+    }
+
+
+  
+    0%{
+        transform: translateX(0%);
+
+    }
+
+
+    }
+   
+
+
+/* @media only screen and (max-width: 600px) { */
+
+    nav{
+        /* height: 100px; */
+        width: 100%;
+        background-color: #152549;
+        padding-top: 1em;
+
+        
+    }
+    .l1{
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Rosarivo';
+        font-weight: 600;
+    }
+    .l2 ul{
+        display: flex;
+        color: white;
+        font-family: 'Poppins';
+        font-size: 0.85rem;
+        justify-content: space-evenly;
+        margin-top: 0.5em;
+        border-top:  1px solid rgb(129, 129, 129);
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+
+    }
+
+    .top{
+        overflow-x: hidden;
+    }
+
+    .top ul{
+        display: flex;
+        width: 500%;
+        animation: scrollAnimation 30s linear  infinite; 
+
+    }
+
+    .m1{
+        padding: 1em;
+        
+    }
+
+
+
+   
+    
+
+
+
+
+
+
+   
+  
+/*  */
+
+
+@media only screen and (min-width: 600px) {
+
+    nav{
+        /* height: 100px; */
+        width: 100%;
+        background-color: #152549;
+        padding-top: 1em;
+        
+    }
+    .l1{
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Rosarivo';
+        font-weight: 600;
+    }
+       
+    .l2{
+        color: white;
+    }
+}
